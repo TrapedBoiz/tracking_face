@@ -1,0 +1,1924 @@
+{
+  "scene": {
+    "metadata": {
+      "version": 4.6,
+      "type": "Object",
+      "generator": "Object3D.toJSON"
+    },
+    "object": {
+      "uuid": "d04d205e-9204-4504-969a-e151f462ee2f",
+      "type": "Group",
+      "layers": 1,
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "children": [
+        {
+          "uuid": "8198c83e-5492-443b-a0e4-db7597de7e05",
+          "type": "Object3D",
+          "name": "Hips",
+          "userData": {
+            "name": "Hips"
+          },
+          "layers": 1,
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.99999994,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "children": [
+            {
+              "uuid": "5633dfdb-0e73-4a59-875a-7ee62f5a88a7",
+              "type": "Object3D",
+              "name": "Spine",
+              "userData": {
+                "name": "Spine"
+              },
+              "layers": 1,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0.0537187457,
+                0.0133264624,
+                1
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "children": [
+                {
+                  "uuid": "62168f70-116c-4ede-aa94-47db2928c411",
+                  "type": "Object3D",
+                  "name": "Chest",
+                  "userData": {
+                    "name": "Chest"
+                  },
+                  "layers": 1,
+                  "matrix": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0.112524867,
+                    0.00153619144,
+                    1
+                  ],
+                  "up": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "uuid": "ee16dcbd-2b8e-47b9-a87f-719019f27425",
+                      "type": "Object3D",
+                      "name": "UpperChest",
+                      "userData": {
+                        "name": "UpperChest"
+                      },
+                      "layers": 1,
+                      "matrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0.11569345,
+                        -0.01578117,
+                        1
+                      ],
+                      "up": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "uuid": "6b55da00-6803-4f91-b23f-77483dfb9f47",
+                          "type": "Object3D",
+                          "name": "Neck",
+                          "userData": {
+                            "name": "Neck"
+                          },
+                          "layers": 1,
+                          "matrix": [
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0.145692825,
+                            -0.042243138,
+                            1
+                          ],
+                          "up": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "uuid": "f8ec6d73-a3dc-4765-9c63-f6f86e9a68aa",
+                              "type": "Object3D",
+                              "name": "Head",
+                              "userData": {
+                                "name": "Head"
+                              },
+                              "layers": 1,
+                              "matrix": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                0.08058822,
+                                0.0100759268,
+                                1
+                              ],
+                              "up": [
+                                0,
+                                1,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "uuid": "1745c4de-3b96-4d6a-9e5d-d57b758d78aa",
+                                  "type": "Object3D",
+                                  "name": "LeftEye",
+                                  "userData": {
+                                    "name": "LeftEye"
+                                  },
+                                  "layers": 1,
+                                  "matrix": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                  ],
+                                  "up": [
+                                    0,
+                                    1,
+                                    0
+                                  ]
+                                },
+                                {
+                                  "uuid": "16f604da-a147-42a1-8e85-bcbc46eaf93e",
+                                  "type": "Object3D",
+                                  "name": "RightEye",
+                                  "userData": {
+                                    "name": "RightEye"
+                                  },
+                                  "layers": 1,
+                                  "matrix": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                  ],
+                                  "up": [
+                                    0,
+                                    1,
+                                    0
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "9205074b-0ef6-4272-8a6d-d89c58971a42",
+                          "type": "Object3D",
+                          "name": "LeftShoulder",
+                          "userData": {
+                            "name": "LeftShoulder"
+                          },
+                          "layers": 1,
+                          "matrix": [
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0.02466441,
+                            0.116395354,
+                            -0.0330057144,
+                            1
+                          ],
+                          "up": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "uuid": "6a6664eb-f38c-4fd3-ad3e-834e1b0d5a10",
+                              "type": "Object3D",
+                              "name": "LeftUpperArm",
+                              "userData": {
+                                "name": "LeftUpperArm"
+                              },
+                              "layers": 1,
+                              "matrix": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0.09489077,
+                                -0.0135025978,
+                                0,
+                                1
+                              ],
+                              "up": [
+                                0,
+                                1,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "uuid": "2043a5ce-a07a-4e8e-88a1-08c42421a7d8",
+                                  "type": "Object3D",
+                                  "name": "LeftLowerArm",
+                                  "userData": {
+                                    "name": "LeftLowerArm"
+                                  },
+                                  "layers": 1,
+                                  "matrix": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0.242129415,
+                                    0,
+                                    0,
+                                    1
+                                  ],
+                                  "up": [
+                                    0,
+                                    1,
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "uuid": "521ede35-2ff4-48f5-9efe-5aef6084532a",
+                                      "type": "Object3D",
+                                      "name": "LeftHand",
+                                      "userData": {
+                                        "name": "LeftHand"
+                                      },
+                                      "layers": 1,
+                                      "matrix": [
+                                        1,
+                                        0,
+                                        0,
+                                        0,
+                                        0,
+                                        1,
+                                        0,
+                                        0,
+                                        0,
+                                        0,
+                                        1,
+                                        0,
+                                        0.236438,
+                                        0.00000321865082,
+                                        0.000413917,
+                                        1
+                                      ],
+                                      "up": [
+                                        0,
+                                        1,
+                                        0
+                                      ],
+                                      "children": [
+                                        {
+                                          "uuid": "0b73ab40-0145-4eeb-86a1-f5489ad0b0ee",
+                                          "type": "Object3D",
+                                          "name": "LeftIndexProximal",
+                                          "userData": {
+                                            "name": "LeftIndexProximal"
+                                          },
+                                          "layers": 1,
+                                          "matrix": [
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1
+                                          ],
+                                          "up": [
+                                            0,
+                                            1,
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "uuid": "828ef1e7-0dc2-490f-bed2-66974a9671bd",
+                                              "type": "Object3D",
+                                              "name": "LeftIndexIntermediate",
+                                              "userData": {
+                                                "name": "LeftIndexIntermediate"
+                                              },
+                                              "layers": 1,
+                                              "matrix": [
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1
+                                              ],
+                                              "up": [
+                                                0,
+                                                1,
+                                                0
+                                              ],
+                                              "children": [
+                                                {
+                                                  "uuid": "7fe77dea-a987-4882-b4a1-cbf2aeb0b627",
+                                                  "type": "Object3D",
+                                                  "name": "LeftIndexDistal",
+                                                  "userData": {
+                                                    "name": "LeftIndexDistal"
+                                                  },
+                                                  "layers": 1,
+                                                  "matrix": [
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                  ],
+                                                  "up": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "uuid": "26dbbc64-b877-4f49-b061-7195111d6155",
+                                          "type": "Object3D",
+                                          "name": "LeftLittleProximal",
+                                          "userData": {
+                                            "name": "LeftLittleProximal"
+                                          },
+                                          "layers": 1,
+                                          "matrix": [
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1
+                                          ],
+                                          "up": [
+                                            0,
+                                            1,
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "uuid": "829e9481-ce2f-4233-973b-d359255abf78",
+                                              "type": "Object3D",
+                                              "name": "LeftLittleIntermediate",
+                                              "userData": {
+                                                "name": "LeftLittleIntermediate"
+                                              },
+                                              "layers": 1,
+                                              "matrix": [
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1
+                                              ],
+                                              "up": [
+                                                0,
+                                                1,
+                                                0
+                                              ],
+                                              "children": [
+                                                {
+                                                  "uuid": "1164c629-d594-413b-82e0-0913cc64dc4e",
+                                                  "type": "Object3D",
+                                                  "name": "LeftLittleDistal",
+                                                  "userData": {
+                                                    "name": "LeftLittleDistal"
+                                                  },
+                                                  "layers": 1,
+                                                  "matrix": [
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                  ],
+                                                  "up": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "uuid": "cb764a38-98ef-43ba-9d37-554c847d2434",
+                                          "type": "Object3D",
+                                          "name": "LeftMiddleProximal",
+                                          "userData": {
+                                            "name": "LeftMiddleProximal"
+                                          },
+                                          "layers": 1,
+                                          "matrix": [
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1
+                                          ],
+                                          "up": [
+                                            0,
+                                            1,
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "uuid": "b9434ca5-077d-4512-a2e1-e06657946b58",
+                                              "type": "Object3D",
+                                              "name": "LeftMiddleIntermediate",
+                                              "userData": {
+                                                "name": "LeftMiddleIntermediate"
+                                              },
+                                              "layers": 1,
+                                              "matrix": [
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1
+                                              ],
+                                              "up": [
+                                                0,
+                                                1,
+                                                0
+                                              ],
+                                              "children": [
+                                                {
+                                                  "uuid": "73047e07-1e4b-47d0-b9b0-ac8a974aa311",
+                                                  "type": "Object3D",
+                                                  "name": "LeftMiddleDistal",
+                                                  "userData": {
+                                                    "name": "LeftMiddleDistal"
+                                                  },
+                                                  "layers": 1,
+                                                  "matrix": [
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                  ],
+                                                  "up": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "uuid": "65bdac29-6e95-488f-ac1b-0330c186e1de",
+                                          "type": "Object3D",
+                                          "name": "LeftRingProximal",
+                                          "userData": {
+                                            "name": "LeftRingProximal"
+                                          },
+                                          "layers": 1,
+                                          "matrix": [
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1
+                                          ],
+                                          "up": [
+                                            0,
+                                            1,
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "uuid": "3ac79d73-d603-4f46-acc8-8703300f70dd",
+                                              "type": "Object3D",
+                                              "name": "LeftRingIntermediate",
+                                              "userData": {
+                                                "name": "LeftRingIntermediate"
+                                              },
+                                              "layers": 1,
+                                              "matrix": [
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1
+                                              ],
+                                              "up": [
+                                                0,
+                                                1,
+                                                0
+                                              ],
+                                              "children": [
+                                                {
+                                                  "uuid": "b41d9704-c113-4839-a7e3-97c9d77bbd1c",
+                                                  "type": "Object3D",
+                                                  "name": "LeftRingDistal",
+                                                  "userData": {
+                                                    "name": "LeftRingDistal"
+                                                  },
+                                                  "layers": 1,
+                                                  "matrix": [
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                  ],
+                                                  "up": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "uuid": "89f5b911-1277-4a84-9036-4bddf19fcaa0",
+                                          "type": "Object3D",
+                                          "name": "LeftThumbProximal",
+                                          "userData": {
+                                            "name": "LeftThumbProximal"
+                                          },
+                                          "layers": 1,
+                                          "matrix": [
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1
+                                          ],
+                                          "up": [
+                                            0,
+                                            1,
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "uuid": "e7aa490e-298d-4b3a-97a8-853fe61b5cf6",
+                                              "type": "Object3D",
+                                              "name": "LeftThumbIntermediate",
+                                              "userData": {
+                                                "name": "LeftThumbIntermediate"
+                                              },
+                                              "layers": 1,
+                                              "matrix": [
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1
+                                              ],
+                                              "up": [
+                                                0,
+                                                1,
+                                                0
+                                              ],
+                                              "children": [
+                                                {
+                                                  "uuid": "efb52d3e-956d-4c02-afca-170bf6b24b72",
+                                                  "type": "Object3D",
+                                                  "name": "LeftThumbDistal",
+                                                  "userData": {
+                                                    "name": "LeftThumbDistal"
+                                                  },
+                                                  "layers": 1,
+                                                  "matrix": [
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                  ],
+                                                  "up": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "6b257ecf-acf1-4d6b-85d5-e14633cc5434",
+                          "type": "Object3D",
+                          "name": "RightShoulder",
+                          "userData": {
+                            "name": "RightShoulder"
+                          },
+                          "layers": 1,
+                          "matrix": [
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            -0.02466441,
+                            0.116395354,
+                            -0.0330057144,
+                            1
+                          ],
+                          "up": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "uuid": "c83cc716-0ec9-45a5-8ba4-0bb6109d549b",
+                              "type": "Object3D",
+                              "name": "RightUpperArm",
+                              "userData": {
+                                "name": "RightUpperArm"
+                              },
+                              "layers": 1,
+                              "matrix": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -0.09489077,
+                                -0.0135025978,
+                                0,
+                                1
+                              ],
+                              "up": [
+                                0,
+                                1,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "uuid": "13698ca4-4ae8-4c1a-afd9-fd69e42e2901",
+                                  "type": "Object3D",
+                                  "name": "RightLowerArm",
+                                  "userData": {
+                                    "name": "RightLowerArm"
+                                  },
+                                  "layers": 1,
+                                  "matrix": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    -0.242129415,
+                                    0,
+                                    0,
+                                    1
+                                  ],
+                                  "up": [
+                                    0,
+                                    1,
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "uuid": "f5cfcc93-e7ca-49e1-ae3b-74a5aea41513",
+                                      "type": "Object3D",
+                                      "name": "RightHand",
+                                      "userData": {
+                                        "name": "RightHand"
+                                      },
+                                      "layers": 1,
+                                      "matrix": [
+                                        1,
+                                        0,
+                                        0,
+                                        0,
+                                        0,
+                                        1,
+                                        0,
+                                        0,
+                                        0,
+                                        0,
+                                        1,
+                                        0,
+                                        -0.236438,
+                                        0.00000321865082,
+                                        0.000413917,
+                                        1
+                                      ],
+                                      "up": [
+                                        0,
+                                        1,
+                                        0
+                                      ],
+                                      "children": [
+                                        {
+                                          "uuid": "19d0a555-b9ee-4b97-aec3-6335fae9c15f",
+                                          "type": "Object3D",
+                                          "name": "RightIndexProximal",
+                                          "userData": {
+                                            "name": "RightIndexProximal"
+                                          },
+                                          "layers": 1,
+                                          "matrix": [
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1
+                                          ],
+                                          "up": [
+                                            0,
+                                            1,
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "uuid": "47bff3ce-2b1a-4c87-a54e-707b237401ee",
+                                              "type": "Object3D",
+                                              "name": "RightIndexIntermediate",
+                                              "userData": {
+                                                "name": "RightIndexIntermediate"
+                                              },
+                                              "layers": 1,
+                                              "matrix": [
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1
+                                              ],
+                                              "up": [
+                                                0,
+                                                1,
+                                                0
+                                              ],
+                                              "children": [
+                                                {
+                                                  "uuid": "633f8a24-e57a-40b8-8028-03dc6daad652",
+                                                  "type": "Object3D",
+                                                  "name": "RightIndexDistal",
+                                                  "userData": {
+                                                    "name": "RightIndexDistal"
+                                                  },
+                                                  "layers": 1,
+                                                  "matrix": [
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                  ],
+                                                  "up": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "uuid": "371d3a15-c8af-40a3-9829-923a5435e933",
+                                          "type": "Object3D",
+                                          "name": "RightLittleProximal",
+                                          "userData": {
+                                            "name": "RightLittleProximal"
+                                          },
+                                          "layers": 1,
+                                          "matrix": [
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1
+                                          ],
+                                          "up": [
+                                            0,
+                                            1,
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "uuid": "f27edb70-1d14-444d-9970-c7113c4c3a42",
+                                              "type": "Object3D",
+                                              "name": "RightLittleIntermediate",
+                                              "userData": {
+                                                "name": "RightLittleIntermediate"
+                                              },
+                                              "layers": 1,
+                                              "matrix": [
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1
+                                              ],
+                                              "up": [
+                                                0,
+                                                1,
+                                                0
+                                              ],
+                                              "children": [
+                                                {
+                                                  "uuid": "abfc1506-32a2-4f5d-aad2-1f4e9fbe7e43",
+                                                  "type": "Object3D",
+                                                  "name": "RightLittleDistal",
+                                                  "userData": {
+                                                    "name": "RightLittleDistal"
+                                                  },
+                                                  "layers": 1,
+                                                  "matrix": [
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                  ],
+                                                  "up": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "uuid": "5bd1baa0-1934-43ee-a2e8-905f327480a8",
+                                          "type": "Object3D",
+                                          "name": "RightMiddleProximal",
+                                          "userData": {
+                                            "name": "RightMiddleProximal"
+                                          },
+                                          "layers": 1,
+                                          "matrix": [
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1
+                                          ],
+                                          "up": [
+                                            0,
+                                            1,
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "uuid": "6c1f2441-77f3-4455-88be-ec308a386b20",
+                                              "type": "Object3D",
+                                              "name": "RightMiddleIntermediate",
+                                              "userData": {
+                                                "name": "RightMiddleIntermediate"
+                                              },
+                                              "layers": 1,
+                                              "matrix": [
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1
+                                              ],
+                                              "up": [
+                                                0,
+                                                1,
+                                                0
+                                              ],
+                                              "children": [
+                                                {
+                                                  "uuid": "d3547c79-0da4-415f-9a4e-9a0b869c6117",
+                                                  "type": "Object3D",
+                                                  "name": "RightMiddleDistal",
+                                                  "userData": {
+                                                    "name": "RightMiddleDistal"
+                                                  },
+                                                  "layers": 1,
+                                                  "matrix": [
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                  ],
+                                                  "up": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "uuid": "03b7f29e-c895-4d6d-a5f2-01819c3ebaa2",
+                                          "type": "Object3D",
+                                          "name": "RightRingProximal",
+                                          "userData": {
+                                            "name": "RightRingProximal"
+                                          },
+                                          "layers": 1,
+                                          "matrix": [
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1
+                                          ],
+                                          "up": [
+                                            0,
+                                            1,
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "uuid": "717f419b-4b32-4c1c-b4e3-d15df5ce0b3b",
+                                              "type": "Object3D",
+                                              "name": "RightRingIntermediate",
+                                              "userData": {
+                                                "name": "RightRingIntermediate"
+                                              },
+                                              "layers": 1,
+                                              "matrix": [
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1
+                                              ],
+                                              "up": [
+                                                0,
+                                                1,
+                                                0
+                                              ],
+                                              "children": [
+                                                {
+                                                  "uuid": "f7fd0c9d-016a-47a7-86b2-023995fba754",
+                                                  "type": "Object3D",
+                                                  "name": "RightRingDistal",
+                                                  "userData": {
+                                                    "name": "RightRingDistal"
+                                                  },
+                                                  "layers": 1,
+                                                  "matrix": [
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                  ],
+                                                  "up": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "uuid": "5381edc7-af44-43c4-80be-0323dafe298a",
+                                          "type": "Object3D",
+                                          "name": "RightThumbProximal",
+                                          "userData": {
+                                            "name": "RightThumbProximal"
+                                          },
+                                          "layers": 1,
+                                          "matrix": [
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1
+                                          ],
+                                          "up": [
+                                            0,
+                                            1,
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "uuid": "34ad3733-06af-423a-b5e7-3ad23843af74",
+                                              "type": "Object3D",
+                                              "name": "RightThumbIntermediate",
+                                              "userData": {
+                                                "name": "RightThumbIntermediate"
+                                              },
+                                              "layers": 1,
+                                              "matrix": [
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1
+                                              ],
+                                              "up": [
+                                                0,
+                                                1,
+                                                0
+                                              ],
+                                              "children": [
+                                                {
+                                                  "uuid": "36f7b43d-5512-4662-bae4-9c029e98b02f",
+                                                  "type": "Object3D",
+                                                  "name": "RightThumbDistal",
+                                                  "userData": {
+                                                    "name": "RightThumbDistal"
+                                                  },
+                                                  "layers": 1,
+                                                  "matrix": [
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1
+                                                  ],
+                                                  "up": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "f9a739d0-2202-45ee-b166-d4063180f9f1",
+              "type": "Object3D",
+              "name": "LeftUpperLeg",
+              "userData": {
+                "name": "LeftUpperLeg"
+              },
+              "layers": 1,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0.0849738047,
+                -0.04380387,
+                -0.004027169,
+                1
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "children": [
+                {
+                  "uuid": "77cde79b-7e4c-4f90-b777-37f766ab44d4",
+                  "type": "Object3D",
+                  "name": "LeftLowerLeg",
+                  "userData": {
+                    "name": "LeftLowerLeg"
+                  },
+                  "layers": 1,
+                  "matrix": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    -0.38866502,
+                    -0.008133281,
+                    1
+                  ],
+                  "up": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "uuid": "fc4ced5d-717e-4db0-8677-c70e7376a687",
+                      "type": "Object3D",
+                      "name": "LeftFoot",
+                      "userData": {
+                        "name": "LeftFoot"
+                      },
+                      "layers": 1,
+                      "matrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        -0.456769526,
+                        -0.0274647586,
+                        1
+                      ],
+                      "up": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "uuid": "a811085d-0f9a-44d2-9e8b-0340c88be276",
+                          "type": "Object3D",
+                          "name": "LeftToes",
+                          "userData": {
+                            "name": "LeftToes"
+                          },
+                          "layers": 1,
+                          "matrix": [
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            -0.06944442,
+                            0.121905342,
+                            1
+                          ],
+                          "up": [
+                            0,
+                            1,
+                            0
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "3a10b62b-f4fb-45a7-aee6-e9fbc580be3e",
+              "type": "Object3D",
+              "name": "RightUpperLeg",
+              "userData": {
+                "name": "RightUpperLeg"
+              },
+              "layers": 1,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                -0.0849738047,
+                -0.04380387,
+                -0.004027169,
+                1
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "children": [
+                {
+                  "uuid": "de0f0e2a-402e-4534-9c1c-2f70459d40e6",
+                  "type": "Object3D",
+                  "name": "RightLowerLeg",
+                  "userData": {
+                    "name": "RightLowerLeg"
+                  },
+                  "layers": 1,
+                  "matrix": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    -0.38866502,
+                    -0.008133281,
+                    1
+                  ],
+                  "up": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "uuid": "1e833d19-7aad-4f42-a780-de4897762c41",
+                      "type": "Object3D",
+                      "name": "RightFoot",
+                      "userData": {
+                        "name": "RightFoot"
+                      },
+                      "layers": 1,
+                      "matrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        -0.456769526,
+                        -0.0274647586,
+                        1
+                      ],
+                      "up": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "uuid": "b4374bd3-f73c-41ee-b133-2de4ebe338fc",
+                          "type": "Object3D",
+                          "name": "RightToes",
+                          "userData": {
+                            "name": "RightToes"
+                          },
+                          "layers": 1,
+                          "matrix": [
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            -0.06944442,
+                            0.121905342,
+                            1
+                          ],
+                          "up": [
+                            0,
+                            1,
+                            0
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "userData": {
+    "gltfExtensions": {
+      "VRMC_vrm_animation": {
+        "humanoid": {
+          "humanBones": {
+            "chest": {
+              "node": 2
+            },
+            "head": {
+              "node": 5
+            },
+            "hips": {
+              "node": 0
+            },
+            "leftFoot": {
+              "node": 48
+            },
+            "leftHand": {
+              "node": 11
+            },
+            "leftLowerArm": {
+              "node": 10
+            },
+            "leftLowerLeg": {
+              "node": 47
+            },
+            "leftShoulder": {
+              "node": 8
+            },
+            "leftToes": {
+              "node": 49
+            },
+            "leftUpperArm": {
+              "node": 9
+            },
+            "leftUpperLeg": {
+              "node": 46
+            },
+            "neck": {
+              "node": 4
+            },
+            "rightFoot": {
+              "node": 52
+            },
+            "rightHand": {
+              "node": 30
+            },
+            "rightLowerArm": {
+              "node": 29
+            },
+            "rightLowerLeg": {
+              "node": 51
+            },
+            "rightShoulder": {
+              "node": 27
+            },
+            "rightToes": {
+              "node": 53
+            },
+            "rightUpperArm": {
+              "node": 28
+            },
+            "rightUpperLeg": {
+              "node": 50
+            },
+            "spine": {
+              "node": 1
+            },
+            "upperChest": {
+              "node": 3
+            }
+          }
+        },
+        "specVersion": "1.0"
+      }
+    }
+  }
+}

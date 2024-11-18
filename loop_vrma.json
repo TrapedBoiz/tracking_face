@@ -1,0 +1,1228 @@
+{
+  "scene": {
+    "metadata": {
+      "version": 4.6,
+      "type": "Object",
+      "generator": "Object3D.toJSON"
+    },
+    "object": {
+      "uuid": "4b91cac0-3121-4942-a62a-61d1a1e6d1c3",
+      "type": "Group",
+      "name": "AuxScene",
+      "layers": 1,
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "children": [
+        {
+          "uuid": "0d1dbf95-91e0-411e-952b-fc41d2eeca36",
+          "type": "Object3D",
+          "userData": {
+            "vrmBoneMap": {}
+          },
+          "layers": 1,
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "children": [
+            {
+              "uuid": "e80e7f03-0919-4db0-bf75-652c9ac04ad1",
+              "type": "Object3D",
+              "name": "root",
+              "userData": {
+                "name": "root"
+              },
+              "layers": 1,
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                90.568335,
+                0.000043,
+                1
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "children": [
+                {
+                  "uuid": "39cb3860-9728-48fd-bf12-02fdd424546a",
+                  "type": "Object3D",
+                  "name": "torso_1",
+                  "userData": {
+                    "name": "torso_1"
+                  },
+                  "layers": 1,
+                  "matrix": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    4.931892,
+                    -1.118097,
+                    1
+                  ],
+                  "up": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "uuid": "10711a1f-6f6a-414d-a141-01c398a2cec2",
+                      "type": "Object3D",
+                      "name": "torso_2",
+                      "userData": {
+                        "name": "torso_2"
+                      },
+                      "layers": 1,
+                      "matrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        5.454277,
+                        1.040463,
+                        1
+                      ],
+                      "up": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "uuid": "a1519ad0-7f85-47ad-a60d-a7ce9baad32e",
+                          "type": "Object3D",
+                          "name": "torso_3",
+                          "userData": {
+                            "name": "torso_3"
+                          },
+                          "layers": 1,
+                          "matrix": [
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            5.816658,
+                            0.111689,
+                            1
+                          ],
+                          "up": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "uuid": "f2254619-4258-4816-b653-c2949b3023cc",
+                              "type": "Object3D",
+                              "name": "torso_4",
+                              "userData": {
+                                "name": "torso_4"
+                              },
+                              "layers": 1,
+                              "matrix": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                6.317802,
+                                -0.430701,
+                                1
+                              ],
+                              "up": [
+                                0,
+                                1,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "uuid": "2e80734f-37b6-4898-b975-174b724dcc2a",
+                                  "type": "Object3D",
+                                  "name": "torso_5",
+                                  "userData": {
+                                    "name": "torso_5"
+                                  },
+                                  "layers": 1,
+                                  "matrix": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    7.385674,
+                                    -1.462397,
+                                    1
+                                  ],
+                                  "up": [
+                                    0,
+                                    1,
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "uuid": "7fe7ac50-71bb-48c3-ac62-06e5c8f187c2",
+                                      "type": "Object3D",
+                                      "name": "torso_6",
+                                      "userData": {
+                                        "name": "torso_6"
+                                      },
+                                      "layers": 1,
+                                      "matrix": [
+                                        1,
+                                        0,
+                                        0,
+                                        0,
+                                        0,
+                                        1,
+                                        0,
+                                        0,
+                                        0,
+                                        0,
+                                        1,
+                                        0,
+                                        0,
+                                        9.222878,
+                                        -0.888057,
+                                        1
+                                      ],
+                                      "up": [
+                                        0,
+                                        1,
+                                        0
+                                      ],
+                                      "children": [
+                                        {
+                                          "uuid": "89478ce2-274d-4bb3-bdeb-9bcf438368de",
+                                          "type": "Object3D",
+                                          "name": "torso_7",
+                                          "userData": {
+                                            "name": "torso_7"
+                                          },
+                                          "layers": 1,
+                                          "matrix": [
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                            10.246399,
+                                            1.531335,
+                                            1
+                                          ],
+                                          "up": [
+                                            0,
+                                            1,
+                                            0
+                                          ],
+                                          "children": [
+                                            {
+                                              "uuid": "7c0f4faf-a001-41a1-9e5b-7dc13e36007f",
+                                              "type": "Object3D",
+                                              "name": "neck_1",
+                                              "userData": {
+                                                "name": "neck_1"
+                                              },
+                                              "layers": 1,
+                                              "matrix": [
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                4.648117,
+                                                0.694667,
+                                                1
+                                              ],
+                                              "up": [
+                                                0,
+                                                1,
+                                                0
+                                              ],
+                                              "children": [
+                                                {
+                                                  "uuid": "745a2c84-1d91-4474-bb93-362ec7b3c2b9",
+                                                  "type": "Object3D",
+                                                  "name": "neck_2",
+                                                  "userData": {
+                                                    "name": "neck_2"
+                                                  },
+                                                  "layers": 1,
+                                                  "matrix": [
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    4.681747,
+                                                    0.409603,
+                                                    1
+                                                  ],
+                                                  "up": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                  ],
+                                                  "children": [
+                                                    {
+                                                      "uuid": "98aa16db-ad20-4534-987a-a1e395c0909c",
+                                                      "type": "Object3D",
+                                                      "name": "head",
+                                                      "userData": {
+                                                        "name": "head"
+                                                      },
+                                                      "layers": 1,
+                                                      "matrix": [
+                                                        1,
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        1,
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        1,
+                                                        0,
+                                                        0,
+                                                        4.690796,
+                                                        0.742952,
+                                                        1
+                                                      ],
+                                                      "up": [
+                                                        0,
+                                                        1,
+                                                        0
+                                                      ],
+                                                      "children": [
+                                                        {
+                                                          "uuid": "78278bc3-b9eb-4982-9f9c-1e6eacf8f6ba",
+                                                          "type": "Object3D",
+                                                          "name": "ENDSITE",
+                                                          "userData": {
+                                                            "name": "ENDSITE"
+                                                          },
+                                                          "layers": 1,
+                                                          "matrix": [
+                                                            1,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            1,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            1,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            1
+                                                          ],
+                                                          "up": [
+                                                            0,
+                                                            1,
+                                                            0
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "uuid": "8732a990-a537-42f9-a010-c6191c5606ee",
+                                              "type": "Object3D",
+                                              "name": "l_shoulder",
+                                              "userData": {
+                                                "name": "l_shoulder"
+                                              },
+                                              "layers": 1,
+                                              "matrix": [
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                1.19736,
+                                                -7.387436,
+                                                7.316007,
+                                                1
+                                              ],
+                                              "up": [
+                                                0,
+                                                1,
+                                                0
+                                              ],
+                                              "children": [
+                                                {
+                                                  "uuid": "4e1e02d0-f1ef-4ac6-9f40-3d1987281a9c",
+                                                  "type": "Object3D",
+                                                  "name": "l_up_arm",
+                                                  "userData": {
+                                                    "name": "l_up_arm"
+                                                  },
+                                                  "layers": 1,
+                                                  "matrix": [
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    12.5803,
+                                                    3.155594,
+                                                    -3.174248,
+                                                    1
+                                                  ],
+                                                  "up": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                  ],
+                                                  "children": [
+                                                    {
+                                                      "uuid": "74b643bf-7311-449a-b307-8ebf8b9130e3",
+                                                      "type": "Object3D",
+                                                      "name": "l_low_arm",
+                                                      "userData": {
+                                                        "name": "l_low_arm"
+                                                      },
+                                                      "layers": 1,
+                                                      "matrix": [
+                                                        1,
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        1,
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        1,
+                                                        0,
+                                                        28.363899,
+                                                        0.058075,
+                                                        0.133078,
+                                                        1
+                                                      ],
+                                                      "up": [
+                                                        0,
+                                                        1,
+                                                        0
+                                                      ],
+                                                      "children": [
+                                                        {
+                                                          "uuid": "a47a810e-63d9-4f5f-b8a0-390df1286d2a",
+                                                          "type": "Object3D",
+                                                          "name": "l_hand",
+                                                          "userData": {
+                                                            "name": "l_hand"
+                                                          },
+                                                          "layers": 1,
+                                                          "matrix": [
+                                                            1,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            1,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            1,
+                                                            0,
+                                                            23.533504,
+                                                            0.048187,
+                                                            0.110415,
+                                                            1
+                                                          ],
+                                                          "up": [
+                                                            0,
+                                                            1,
+                                                            0
+                                                          ],
+                                                          "children": [
+                                                            {
+                                                              "uuid": "28579fb3-296e-4e8c-b9d8-a163191698e3",
+                                                              "type": "Object3D",
+                                                              "name": "ENDSITE_1",
+                                                              "userData": {
+                                                                "name": "ENDSITE"
+                                                              },
+                                                              "layers": 1,
+                                                              "matrix": [
+                                                                1,
+                                                                0,
+                                                                0,
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                0,
+                                                                0,
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                0,
+                                                                0,
+                                                                0,
+                                                                0,
+                                                                1
+                                                              ],
+                                                              "up": [
+                                                                0,
+                                                                1,
+                                                                0
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "uuid": "57443aac-3e8e-4950-98f2-32d003502381",
+                                              "type": "Object3D",
+                                              "name": "r_shoulder",
+                                              "userData": {
+                                                "name": "r_shoulder"
+                                              },
+                                              "layers": 1,
+                                              "matrix": [
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                1,
+                                                0,
+                                                -1.19736,
+                                                -7.387436,
+                                                7.315906,
+                                                1
+                                              ],
+                                              "up": [
+                                                0,
+                                                1,
+                                                0
+                                              ],
+                                              "children": [
+                                                {
+                                                  "uuid": "22b64c40-09e1-4945-8d0c-2943a5081854",
+                                                  "type": "Object3D",
+                                                  "name": "r_up_arm",
+                                                  "userData": {
+                                                    "name": "r_up_arm"
+                                                  },
+                                                  "layers": 1,
+                                                  "matrix": [
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    -12.5803,
+                                                    3.155594,
+                                                    -3.174248,
+                                                    1
+                                                  ],
+                                                  "up": [
+                                                    0,
+                                                    1,
+                                                    0
+                                                  ],
+                                                  "children": [
+                                                    {
+                                                      "uuid": "cf98f870-b221-4efd-88ab-da29566e06ff",
+                                                      "type": "Object3D",
+                                                      "name": "r_low_arm",
+                                                      "userData": {
+                                                        "name": "r_low_arm"
+                                                      },
+                                                      "layers": 1,
+                                                      "matrix": [
+                                                        1,
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        1,
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        0,
+                                                        1,
+                                                        0,
+                                                        -28.363899,
+                                                        0.058075,
+                                                        0.133078,
+                                                        1
+                                                      ],
+                                                      "up": [
+                                                        0,
+                                                        1,
+                                                        0
+                                                      ],
+                                                      "children": [
+                                                        {
+                                                          "uuid": "222aa4c7-9452-4972-ad9f-63636c620527",
+                                                          "type": "Object3D",
+                                                          "name": "r_hand",
+                                                          "userData": {
+                                                            "name": "r_hand"
+                                                          },
+                                                          "layers": 1,
+                                                          "matrix": [
+                                                            1,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            1,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            0,
+                                                            1,
+                                                            0,
+                                                            -23.533504,
+                                                            0.048187,
+                                                            0.110415,
+                                                            1
+                                                          ],
+                                                          "up": [
+                                                            0,
+                                                            1,
+                                                            0
+                                                          ],
+                                                          "children": [
+                                                            {
+                                                              "uuid": "63d73cf6-6042-4be1-a612-77244c45d915",
+                                                              "type": "Object3D",
+                                                              "name": "ENDSITE_2",
+                                                              "userData": {
+                                                                "name": "ENDSITE"
+                                                              },
+                                                              "layers": 1,
+                                                              "matrix": [
+                                                                1,
+                                                                0,
+                                                                0,
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                0,
+                                                                0,
+                                                                0,
+                                                                0,
+                                                                1,
+                                                                0,
+                                                                0,
+                                                                0,
+                                                                0,
+                                                                1
+                                                              ],
+                                                              "up": [
+                                                                0,
+                                                                1,
+                                                                0
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "64fc983a-18cc-4223-af13-1dae05ce528e",
+                  "type": "Object3D",
+                  "name": "l_up_leg",
+                  "userData": {
+                    "name": "l_up_leg"
+                  },
+                  "layers": 1,
+                  "matrix": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    8.96978,
+                    -4.084007,
+                    1.973948,
+                    1
+                  ],
+                  "up": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "uuid": "d677d2cb-6fb0-477d-905b-ec5ea61986f0",
+                      "type": "Object3D",
+                      "name": "l_low_leg",
+                      "userData": {
+                        "name": "l_low_leg"
+                      },
+                      "layers": 1,
+                      "matrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        -0.827718,
+                        -37.651501,
+                        -0.636268,
+                        1
+                      ],
+                      "up": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "uuid": "4cad1c08-8e2f-403f-be53-60a8e7da55e3",
+                          "type": "Object3D",
+                          "name": "l_foot",
+                          "userData": {
+                            "name": "l_foot"
+                          },
+                          "layers": 1,
+                          "matrix": [
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            -2.25899,
+                            -39.2341,
+                            -5.87395,
+                            1
+                          ],
+                          "up": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "uuid": "b22d5f92-9b38-4d3c-8dc4-bda97d721daa",
+                              "type": "Object3D",
+                              "name": "l_toes",
+                              "userData": {
+                                "name": "l_toes"
+                              },
+                              "layers": 1,
+                              "matrix": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0.756579,
+                                -9.598727,
+                                12.134795,
+                                1
+                              ],
+                              "up": [
+                                0,
+                                1,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "uuid": "4af916a6-f55e-4676-b06b-fd282684ba4d",
+                                  "type": "Object3D",
+                                  "name": "ENDSITE_3",
+                                  "userData": {
+                                    "name": "ENDSITE"
+                                  },
+                                  "layers": 1,
+                                  "matrix": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                  ],
+                                  "up": [
+                                    0,
+                                    1,
+                                    0
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "1aeed268-90ec-4e6d-b723-a5991a1627f9",
+                  "type": "Object3D",
+                  "name": "r_up_leg",
+                  "userData": {
+                    "name": "r_up_leg"
+                  },
+                  "layers": 1,
+                  "matrix": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    -8.96978,
+                    -4.084007,
+                    1.973948,
+                    1
+                  ],
+                  "up": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "uuid": "31703f78-0c30-4287-98b4-cc937aeee529",
+                      "type": "Object3D",
+                      "name": "r_low_leg",
+                      "userData": {
+                        "name": "r_low_leg"
+                      },
+                      "layers": 1,
+                      "matrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0.827718,
+                        -37.651501,
+                        -0.636268,
+                        1
+                      ],
+                      "up": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "uuid": "963e56f1-d380-40b2-b127-bf9a33089d31",
+                          "type": "Object3D",
+                          "name": "r_foot",
+                          "userData": {
+                            "name": "r_foot"
+                          },
+                          "layers": 1,
+                          "matrix": [
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            2.25899,
+                            -39.2341,
+                            -5.87395,
+                            1
+                          ],
+                          "up": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "uuid": "721f0812-a7f8-4870-9724-250e4ad563db",
+                              "type": "Object3D",
+                              "name": "r_toes",
+                              "userData": {
+                                "name": "r_toes"
+                              },
+                              "layers": 1,
+                              "matrix": [
+                                1,
+                                0,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                0,
+                                0,
+                                0,
+                                1,
+                                0,
+                                -0.756579,
+                                -9.598727,
+                                12.134795,
+                                1
+                              ],
+                              "up": [
+                                0,
+                                1,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "uuid": "4e64ddf2-9339-4de3-9f89-23c1178efc2e",
+                                  "type": "Object3D",
+                                  "name": "ENDSITE_4",
+                                  "userData": {
+                                    "name": "ENDSITE"
+                                  },
+                                  "layers": 1,
+                                  "matrix": [
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                  ],
+                                  "up": [
+                                    0,
+                                    1,
+                                    0
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "userData": {
+    "gltfExtensions": {
+      "VRMC_vrm_animation": {
+        "specVersion": "1.0",
+        "humanoid": {
+          "humanBones": {
+            "hips": {
+              "node": 31
+            },
+            "spine": {
+              "node": 19
+            },
+            "chest": {
+              "node": 17
+            },
+            "upperChest": {
+              "node": 14
+            },
+            "leftUpperLeg": {
+              "node": 25
+            },
+            "leftLowerLeg": {
+              "node": 24
+            },
+            "leftFoot": {
+              "node": 23
+            },
+            "leftToes": {
+              "node": 22
+            },
+            "rightUpperLeg": {
+              "node": 30
+            },
+            "rightLowerLeg": {
+              "node": 29
+            },
+            "rightFoot": {
+              "node": 28
+            },
+            "rightToes": {
+              "node": 27
+            },
+            "leftShoulder": {
+              "node": 8
+            },
+            "leftUpperArm": {
+              "node": 7
+            },
+            "leftLowerArm": {
+              "node": 6
+            },
+            "leftHand": {
+              "node": 5
+            },
+            "rightShoulder": {
+              "node": 13
+            },
+            "rightUpperArm": {
+              "node": 12
+            },
+            "rightLowerArm": {
+              "node": 11
+            },
+            "rightHand": {
+              "node": 10
+            },
+            "neck": {
+              "node": 3
+            },
+            "head": {
+              "node": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
