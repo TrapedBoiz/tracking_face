@@ -6,7 +6,7 @@
       "generator": "Object3D.toJSON"
     },
     "object": {
-      "uuid": "4b91cac0-3121-4942-a62a-61d1a1e6d1c3",
+      "uuid": "5cb6f961-c6d9-43ad-9e7a-8f832910693b",
       "type": "Group",
       "name": "AuxScene",
       "layers": 1,
@@ -35,7 +35,7 @@
       ],
       "children": [
         {
-          "uuid": "0d1dbf95-91e0-411e-952b-fc41d2eeca36",
+          "uuid": "b131c061-d09c-4932-b3de-930ad8784354",
           "type": "Object3D",
           "userData": {
             "vrmBoneMap": {}
@@ -66,7 +66,7 @@
           ],
           "children": [
             {
-              "uuid": "e80e7f03-0919-4db0-bf75-652c9ac04ad1",
+              "uuid": "539fcdf4-5289-4009-9577-8817e15e70d9",
               "type": "Object3D",
               "name": "root",
               "userData": {
@@ -98,7 +98,7 @@
               ],
               "children": [
                 {
-                  "uuid": "39cb3860-9728-48fd-bf12-02fdd424546a",
+                  "uuid": "13263fda-ac30-4a55-951b-f20551f22d78",
                   "type": "Object3D",
                   "name": "torso_1",
                   "userData": {
@@ -130,7 +130,7 @@
                   ],
                   "children": [
                     {
-                      "uuid": "10711a1f-6f6a-414d-a141-01c398a2cec2",
+                      "uuid": "38ff32e1-c5f0-46fa-8c91-9f9d63c88755",
                       "type": "Object3D",
                       "name": "torso_2",
                       "userData": {
@@ -162,7 +162,7 @@
                       ],
                       "children": [
                         {
-                          "uuid": "a1519ad0-7f85-47ad-a60d-a7ce9baad32e",
+                          "uuid": "6ad1be7d-5862-4d04-95d8-a47225a1abe5",
                           "type": "Object3D",
                           "name": "torso_3",
                           "userData": {
@@ -194,7 +194,7 @@
                           ],
                           "children": [
                             {
-                              "uuid": "f2254619-4258-4816-b653-c2949b3023cc",
+                              "uuid": "c092c9f7-0532-4410-a5a2-36f47b98cada",
                               "type": "Object3D",
                               "name": "torso_4",
                               "userData": {
@@ -226,7 +226,7 @@
                               ],
                               "children": [
                                 {
-                                  "uuid": "2e80734f-37b6-4898-b975-174b724dcc2a",
+                                  "uuid": "cdf1f1c9-893f-49d6-9182-cd36438814c1",
                                   "type": "Object3D",
                                   "name": "torso_5",
                                   "userData": {
@@ -258,7 +258,7 @@
                                   ],
                                   "children": [
                                     {
-                                      "uuid": "7fe7ac50-71bb-48c3-ac62-06e5c8f187c2",
+                                      "uuid": "a3956726-4229-4446-a5d0-fb12d38f93be",
                                       "type": "Object3D",
                                       "name": "torso_6",
                                       "userData": {
@@ -290,7 +290,7 @@
                                       ],
                                       "children": [
                                         {
-                                          "uuid": "89478ce2-274d-4bb3-bdeb-9bcf438368de",
+                                          "uuid": "6ef2059b-aa23-43f0-9223-22e23ce8000c",
                                           "type": "Object3D",
                                           "name": "torso_7",
                                           "userData": {
@@ -322,7 +322,7 @@
                                           ],
                                           "children": [
                                             {
-                                              "uuid": "7c0f4faf-a001-41a1-9e5b-7dc13e36007f",
+                                              "uuid": "eac8e29b-6367-4225-b9e5-b802a0b8f377",
                                               "type": "Object3D",
                                               "name": "neck_1",
                                               "userData": {
@@ -354,7 +354,7 @@
                                               ],
                                               "children": [
                                                 {
-                                                  "uuid": "745a2c84-1d91-4474-bb93-362ec7b3c2b9",
+                                                  "uuid": "8174d635-a5d6-4410-a02c-3e1587d1c1c1",
                                                   "type": "Object3D",
                                                   "name": "neck_2",
                                                   "userData": {
@@ -386,7 +386,7 @@
                                                   ],
                                                   "children": [
                                                     {
-                                                      "uuid": "98aa16db-ad20-4534-987a-a1e395c0909c",
+                                                      "uuid": "0f710053-2014-4582-a685-0862b3009bba",
                                                       "type": "Object3D",
                                                       "name": "head",
                                                       "userData": {
@@ -418,7 +418,7 @@
                                                       ],
                                                       "children": [
                                                         {
-                                                          "uuid": "78278bc3-b9eb-4982-9f9c-1e6eacf8f6ba",
+                                                          "uuid": "bccda906-2c6b-482a-8d53-4caaf3638879",
                                                           "type": "Object3D",
                                                           "name": "ENDSITE",
                                                           "userData": {
@@ -456,7 +456,7 @@
                                               ]
                                             },
                                             {
-                                              "uuid": "8732a990-a537-42f9-a010-c6191c5606ee",
+                                              "uuid": "e2edda22-257d-43c8-968e-37819bc96a87",
                                               "type": "Object3D",
                                               "name": "l_shoulder",
                                               "userData": {
@@ -488,7 +488,7 @@
                                               ],
                                               "children": [
                                                 {
-                                                  "uuid": "4e1e02d0-f1ef-4ac6-9f40-3d1987281a9c",
+                                                  "uuid": "ea79fff3-3406-4f6e-9637-4216ac1901ae",
                                                   "type": "Object3D",
                                                   "name": "l_up_arm",
                                                   "userData": {
@@ -520,7 +520,7 @@
                                                   ],
                                                   "children": [
                                                     {
-                                                      "uuid": "74b643bf-7311-449a-b307-8ebf8b9130e3",
+                                                      "uuid": "73afa701-9e1e-48e0-98e8-37cd1d59a3a3",
                                                       "type": "Object3D",
                                                       "name": "l_low_arm",
                                                       "userData": {
@@ -552,7 +552,7 @@
                                                       ],
                                                       "children": [
                                                         {
-                                                          "uuid": "a47a810e-63d9-4f5f-b8a0-390df1286d2a",
+                                                          "uuid": "8034dd2e-2acc-4698-ac97-5460b68b3623",
                                                           "type": "Object3D",
                                                           "name": "l_hand",
                                                           "userData": {
@@ -584,7 +584,7 @@
                                                           ],
                                                           "children": [
                                                             {
-                                                              "uuid": "28579fb3-296e-4e8c-b9d8-a163191698e3",
+                                                              "uuid": "189cc24f-634e-4d5e-a1c2-c721fb319a03",
                                                               "type": "Object3D",
                                                               "name": "ENDSITE_1",
                                                               "userData": {
@@ -624,7 +624,7 @@
                                               ]
                                             },
                                             {
-                                              "uuid": "57443aac-3e8e-4950-98f2-32d003502381",
+                                              "uuid": "8878269c-d2b5-4d76-813d-2c0a3d9b34e2",
                                               "type": "Object3D",
                                               "name": "r_shoulder",
                                               "userData": {
@@ -656,7 +656,7 @@
                                               ],
                                               "children": [
                                                 {
-                                                  "uuid": "22b64c40-09e1-4945-8d0c-2943a5081854",
+                                                  "uuid": "315bdc70-b3ff-4a4b-9583-1391fcda94a4",
                                                   "type": "Object3D",
                                                   "name": "r_up_arm",
                                                   "userData": {
@@ -688,7 +688,7 @@
                                                   ],
                                                   "children": [
                                                     {
-                                                      "uuid": "cf98f870-b221-4efd-88ab-da29566e06ff",
+                                                      "uuid": "84b932f7-f409-4fa9-bc08-9d20489c34ad",
                                                       "type": "Object3D",
                                                       "name": "r_low_arm",
                                                       "userData": {
@@ -720,7 +720,7 @@
                                                       ],
                                                       "children": [
                                                         {
-                                                          "uuid": "222aa4c7-9452-4972-ad9f-63636c620527",
+                                                          "uuid": "105ddd05-5323-4b01-b663-2bbfa9142beb",
                                                           "type": "Object3D",
                                                           "name": "r_hand",
                                                           "userData": {
@@ -752,7 +752,7 @@
                                                           ],
                                                           "children": [
                                                             {
-                                                              "uuid": "63d73cf6-6042-4be1-a612-77244c45d915",
+                                                              "uuid": "5e92457b-d30f-447a-bed5-98be8053ed04",
                                                               "type": "Object3D",
                                                               "name": "ENDSITE_2",
                                                               "userData": {
@@ -806,7 +806,7 @@
                   ]
                 },
                 {
-                  "uuid": "64fc983a-18cc-4223-af13-1dae05ce528e",
+                  "uuid": "93e37870-a215-43a5-86ed-d076bdfaef8d",
                   "type": "Object3D",
                   "name": "l_up_leg",
                   "userData": {
@@ -838,7 +838,7 @@
                   ],
                   "children": [
                     {
-                      "uuid": "d677d2cb-6fb0-477d-905b-ec5ea61986f0",
+                      "uuid": "a0debdab-2214-4337-8049-527c7546c171",
                       "type": "Object3D",
                       "name": "l_low_leg",
                       "userData": {
@@ -870,7 +870,7 @@
                       ],
                       "children": [
                         {
-                          "uuid": "4cad1c08-8e2f-403f-be53-60a8e7da55e3",
+                          "uuid": "dcca0063-1695-4999-adf3-b96cea179400",
                           "type": "Object3D",
                           "name": "l_foot",
                           "userData": {
@@ -902,7 +902,7 @@
                           ],
                           "children": [
                             {
-                              "uuid": "b22d5f92-9b38-4d3c-8dc4-bda97d721daa",
+                              "uuid": "83fede2d-bff6-4872-803a-501fffd84e12",
                               "type": "Object3D",
                               "name": "l_toes",
                               "userData": {
@@ -934,7 +934,7 @@
                               ],
                               "children": [
                                 {
-                                  "uuid": "4af916a6-f55e-4676-b06b-fd282684ba4d",
+                                  "uuid": "fafdf3f0-6489-4c50-9c08-2aeea29e8aef",
                                   "type": "Object3D",
                                   "name": "ENDSITE_3",
                                   "userData": {
@@ -974,7 +974,7 @@
                   ]
                 },
                 {
-                  "uuid": "1aeed268-90ec-4e6d-b723-a5991a1627f9",
+                  "uuid": "4c1c8127-42b7-4969-9679-be854c345eca",
                   "type": "Object3D",
                   "name": "r_up_leg",
                   "userData": {
@@ -1006,7 +1006,7 @@
                   ],
                   "children": [
                     {
-                      "uuid": "31703f78-0c30-4287-98b4-cc937aeee529",
+                      "uuid": "f1d3ceb6-3780-4f60-8916-40f37ac2b1ae",
                       "type": "Object3D",
                       "name": "r_low_leg",
                       "userData": {
@@ -1038,7 +1038,7 @@
                       ],
                       "children": [
                         {
-                          "uuid": "963e56f1-d380-40b2-b127-bf9a33089d31",
+                          "uuid": "2bc9e5cb-7a5d-4bd8-bc54-ee4df77d826e",
                           "type": "Object3D",
                           "name": "r_foot",
                           "userData": {
@@ -1070,7 +1070,7 @@
                           ],
                           "children": [
                             {
-                              "uuid": "721f0812-a7f8-4870-9724-250e4ad563db",
+                              "uuid": "7d39619c-2d12-41e4-804f-0f9856cc4257",
                               "type": "Object3D",
                               "name": "r_toes",
                               "userData": {
@@ -1102,7 +1102,7 @@
                               ],
                               "children": [
                                 {
-                                  "uuid": "4e64ddf2-9339-4de3-9f89-23c1178efc2e",
+                                  "uuid": "f6437234-6a33-43d6-b835-ca7e7b7bc715",
                                   "type": "Object3D",
                                   "name": "ENDSITE_4",
                                   "userData": {

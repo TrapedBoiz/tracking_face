@@ -61,6 +61,7 @@
 <body>
   <!-- <div class="vertical-line"></div> -->
   <button id="applyMotionButton">Apply Motion</button>
+  <button id="applyMotionButton1">Apply motion1</button>
   <button id="seenVrma">Seen Vrma</button>
   <button id="seenVrm">Seen Vrm bone</button>
   <script type="module">
@@ -455,7 +456,12 @@
 
         });
         loader1.load(bvhFilePath, function (result) {
-          console.log(result.animations[0]);
+          console.log(result);
+          // console.log("animation name vrma", result.animations[0]);
+          // result.animations[0].tracks.forEach((track, index) => {
+          //   console.log( track.name);
+          // });
+          // console.log("humanBones:", new Map(Object.entries(currentVrm.humanoid.humanBones)));
           for (let i = result.animations[0].tracks.length; i--;) {
             let track = result.animations[0].tracks[i];
             var value = [];
@@ -464,9 +470,12 @@
             // console.log(extension);
             let map = new Map(Object.entries(currentVrm.humanoid.humanBones));
             var exists = Array.from(map.keys()).find(obj => {
-              return track.name.toLowerCase().includes(obj.toLowerCase())
+              // return track.name.toLowerCase().includes(obj.toLowerCase())
+              return customMatch(track.name, obj);
+
             });
             if (exists) {
+              console.log('exists bone: ', track.name);
               if (extension) {
                 track.name = `${map.get(exists).node.name}.${extension}`
               } else {
@@ -523,6 +532,39 @@
       }
       currentBvhFilePath = bvhFilePath;
 
+    }
+
+    function customMatch(trackName, obj) {
+      const nameMap = {
+        "l_shoulder": "leftShoulder",
+        "l_up_arm": "leftUpperArm",
+        "l_low_arm": "leftLowerArm",
+        "l_hand": "leftHand",
+        "r_shoulder": "rightShoulder",
+        "r_up_arm": "rightUpperArm",
+        "r_low_arm": "rightLowerArm",
+        "r_hand": "rightHand",
+        "l_up_leg": "leftUpperLeg",
+        "l_low_leg": "leftLowerLeg",
+        "l_foot": "leftFoot",
+        "l_toes": "leftToes",
+        "r_up_leg": "rightUpperLeg",
+        "r_low_leg": "rightLowerLeg",
+        "r_foot": "rightFoot",
+        "r_toes": "rightToes",
+        "root": "hips",
+        "torso_1": "spine",
+        "torso_2": "chest",
+        "torso_3": "upperChest",
+      };
+      const cleanedTrackName = trackName.split(".")[0];
+
+      const mappedName = nameMap[cleanedTrackName];
+
+      return (
+        (mappedName && mappedName.toLowerCase() === obj.toLowerCase()) ||
+        (trackName.toLowerCase().includes(obj.toLowerCase()) || obj.toLowerCase().includes(trackName.toLowerCase()))
+      );
     }
 
     function getIndex(nameKey) {
@@ -734,10 +776,18 @@
       });
     }
 
+    document.getElementById("applyMotionButton1").addEventListener("click", () => {
+      applyAnimation("https://v-cast.s3.ap-northeast-1.amazonaws.com/talent_2/talent_2_VRMA_0333.vrma", 'waiting');
+      // applyAnimation("./motion2.vrma", 'waiting');
+      // applyAnimation("./motionloop.vrma", 'waiting');
+      // pplyAnimation("https://v-cast.s3.ap-northeast-1.amazonaws.com/admin_4/admin_4_idle_loop.vrma", 'waiting');
+    });
+
     document.getElementById("applyMotionButton").addEventListener("click", () => {
       // applyAnimation("https://v-cast.s3.ap-northeast-1.amazonaws.com/talent_2/talent_2_VRMA_0333.vrma", 'waiting');
-      applyAnimation("./motion2.vrma", 'waiting');
-      // applyAnimation("https://v-cast.s3.ap-northeast-1.amazonaws.com/admin_4/admin_4_idle_loop.vrma", 'waiting');
+      // applyAnimation("./motion2.vrma", 'waiting');
+      // applyAnimation("./motionloop.vrma", 'waiting');
+      applyAnimation("https://v-cast.s3.ap-northeast-1.amazonaws.com/admin_4/admin_4_idle_loop.vrma", 'waiting');
     });
     document.getElementById("seenVrm").addEventListener("click", () => {
       // loadVRMAndListBones("./miyagi_new.vrm");
