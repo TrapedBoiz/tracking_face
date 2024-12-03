@@ -240,7 +240,6 @@
                             obj.frustumCulled = false;
                         });
                         this.morphTargetMeshes = [];
-                        // }
                         this.gltf = vrm;
                         this.gltf.scene.remove();
                         vrm.scene.position.set(0, 0, 0);
@@ -322,173 +321,120 @@
             }
         }
 
-        function applyMotionToVRM(avatar, motionUrl) {
-            const loader = new VRMAnimation();
-            loader.load(motionUrl, (motion) => {
-                if (avatar.gltf && avatar.gltf.humanoid) {
-                    const humanoid = avatar.gltf.humanoid;
+        function customMatch(trackName, obj) {
+            const nameMap = {
+                "l_shoulder": "leftShoulder",
+                "l_up_arm": "leftUpperArm",
+                "l_low_arm": "leftLowerArm",
+                "l_hand": "leftHand",
+                "r_shoulder": "rightShoulder",
+                "r_up_arm": "rightUpperArm",
+                "r_low_arm": "rightLowerArm",
+                "r_hand": "rightHand",
+                "l_up_leg": "leftUpperLeg",
+                "l_low_leg": "leftLowerLeg",
+                "l_foot": "leftFoot",
+                "l_toes": "leftToes",
+                "r_up_leg": "rightUpperLeg",
+                "r_low_leg": "rightLowerLeg",
+                "r_foot": "rightFoot",
+                "r_toes": "rightToes",
+                "root": "hips",
+                "torso_1": "spine",
+                "torso_2": "chest",
+                "torso_3": "upperChest",
+            };
 
-                    // Tạo AnimationMixer nếu chưa có
-                    if (!avatar.gltf.mixer) {
-                        avatar.gltf.mixer = new THREE.AnimationMixer(humanoid.scene);
-                    }
+            const cleanedTrackName = trackName.split(".")[0];
+            const mappedName = nameMap[cleanedTrackName];
 
-                    // Áp dụng motion
-                    const action = avatar.gltf.mixer.clipAction(motion);
-                    action.reset();
-                    action.play();
-
-                    console.log("Motion applied:", motionUrl);
-                } else {
-                    console.error("Humanoid or GLTF not found in avatar.");
-                }
-            });
+            return (
+                (mappedName && mappedName.toLowerCase() === obj.toLowerCase()) ||
+                (trackName.toLowerCase().includes(obj.toLowerCase()) || obj.toLowerCase().includes(trackName.toLowerCase()))
+            );
         }
-        //   class Avatar {
-        //     loader = new GLTFLoader();
-        //     vrm;
 
-        //     constructor(url, scene) {
-        //       this.loadModel(url, scene);
-        //     }
+        function applyMotionToVRM(avatar, motionUrl) {
+            if (!avatar.gltf) {
+                console.error("Avatar not properly initialized");
+                return;
+            }
 
-        //     loadModel(url, scene) {
-        //       this.loader.register((parser) => new VRMLoaderPlugin(parser));
-        //       this.loader.load(
-        //         url,
-        //         (gltf) => {
-        //           const vrm = gltf.userData.vrm;
-        //           VRMUtils.removeUnnecessaryVertices(gltf.scene);
-        //           VRMUtils.removeUnnecessaryJoints(gltf.scene);
-        //           vrm.scene.position.set(0, 0, 0);
-        //           vrm.scene.rotation.set(0, Math.PI, 0); // Rotate to face camera
-        //           scene.add(vrm.scene);
-        //           this.vrm = vrm;
-        //         },
-        //         (progress) =>
-        //           console.log(
-        //             `Loading model... ${(
-        //               (progress.loaded / progress.total) *
-        //               100
-        //             ).toFixed(2)}%`
-        //           ),
-        //         (error) => console.error("Error loading VRM model:", error)
-        //       );
-        //     }
-        //     applyRigFace(data) {
-        //       this.rigRotation("neck", riggedFace.head, 0.7);
-        //       const Blendshape = this.gltf.expressionManager;
-        //       const PresetName = VRMExpressionPresetName;
-        //       riggedFace.eye.l = lerp(
-        //         clamp(1 - riggedFace.eye.l, 0, 1),
-        //         Blendshape.getValue(PresetName.BlinkLeft),
-        //         0.5
-        //       );
-        //       riggedFace.eye.r = lerp(
-        //         clamp(1 - riggedFace.eye.r, 0, 1),
-        //         Blendshape.getValue(PresetName.BlinkRight),
-        //         0.5
-        //       );
-        //       Blendshape.setValue(PresetName.BlinkLeft, riggedFace.eye.l * 1.3);
-        //       Blendshape.setValue(PresetName.BlinkRight, riggedFace.eye.r * 1.3);
-        //       Blendshape.setValue(
-        //         PresetName.Ih,
-        //         lerp(
-        //           riggedFace.mouth.shape.I,
-        //           Blendshape.getValue(PresetName.Ih),
-        //           0.5
-        //         )
-        //       );
-        //       Blendshape.setValue(
-        //         PresetName.Aa,
-        //         lerp(
-        //           riggedFace.mouth.shape.A,
-        //           Blendshape.getValue(PresetName.Aa),
-        //           0.5
-        //         )
-        //       );
-        //       Blendshape.setValue(
-        //         PresetName.Ee,
-        //         lerp(
-        //           riggedFace.mouth.shape.E,
-        //           Blendshape.getValue(PresetName.Ee),
-        //           0.5
-        //         )
-        //       );
-        //       Blendshape.setValue(
-        //         PresetName.Oh,
-        //         lerp(
-        //           riggedFace.mouth.shape.O,
-        //           Blendshape.getValue(PresetName.Oh),
-        //           0.5
-        //         )
-        //       );
-        //       Blendshape.setValue(
-        //         PresetName.Ou,
-        //         lerp(
-        //           riggedFace.mouth.shape.U,
-        //           Blendshape.getValue(PresetName.Ou),
-        //           0.5
-        //         )
-        //       );
-        //       let lookTarget = new THREE.Euler(
-        //         lerp(this.oldLookTarget.x, riggedFace.pupil.y, 0.4),
-        //         lerp(this.oldLookTarget.y, riggedFace.pupil.x, 0.4),
-        //         0,
-        //         "XYZ"
-        //       );
-        //       this.oldLookTarget.copy(lookTarget);
-        //       this.gltf.lookAt?.applier.lookAt(lookTarget);
-        //       //   if (!this.vrm) return;
-        //       //   const expressionManager = this.vrm.expressionManager;
+            const loader = new GLTFLoader();
+            loader.register((parser) => {
+                return new VRMAnimationLoaderPlugin(parser);
+            });
 
-        //       //   // Head rotation
-        //       //   this.vrm.humanoid
-        //       //     .getBoneNode("neck")
-        //       //     .rotation.set(
-        //       //       THREE.MathUtils.degToRad(data.head.degrees.x),
-        //       //       THREE.MathUtils.degToRad(data.head.degrees.y),
-        //       //       THREE.MathUtils.degToRad(data.head.degrees.z)
-        //       //     );
+            loader.load(
+                motionUrl,
+                (gltf) => {
 
-        //       //   // Eye expressions
-        //       //   expressionManager.setValue(
-        //       //     VRMExpressionPresetName.BlinkLeft,
-        //       //     data.eye.l
-        //       //   );
-        //       //   expressionManager.setValue(
-        //       //     VRMExpressionPresetName.BlinkRight,
-        //       //     data.eye.r
-        //       //   );
+                    if (avatar.gltf && avatar.gltf.humanoid) {
+                        // Create AnimationMixer if it doesn't exist
+                        if (!avatar.gltf.mixer) {
+                            avatar.gltf.mixer = new THREE.AnimationMixer(avatar.gltf.scene);
+                        }
 
-        //       //   // Mouth shape
-        //       //   expressionManager.setValue(
-        //       //     VRMExpressionPresetName.Aa,
-        //       //     data.mouth.shape.A
-        //       //   );
-        //       //   expressionManager.setValue(
-        //       //     VRMExpressionPresetName.Ee,
-        //       //     data.mouth.shape.E
-        //       //   );
-        //       //   expressionManager.setValue(
-        //       //     VRMExpressionPresetName.Ih,
-        //       //     data.mouth.shape.I
-        //       //   );
-        //       //   expressionManager.setValue(
-        //       //     VRMExpressionPresetName.Oh,
-        //       //     data.mouth.shape.O
-        //       //   );
-        //       //   expressionManager.setValue(
-        //       //     VRMExpressionPresetName.Ou,
-        //       //     data.mouth.shape.U
-        //       //   );
+                        if (gltf.animations && gltf.animations[0]) {
+                            const animation = gltf.animations[0];
 
-        //       //   // Eye look direction
-        //       //   this.vrm.lookAt.applier.lookAt(
-        //       //     new THREE.Vector3(data.pupil.x, data.pupil.y, 0)
-        //       //   );
-        //     }
-        //   }
+                            // Process each track in the animation
+                            for (let i = animation.tracks.length; i--;) {
+                                let track = animation.tracks[i];
+                                const extension = track.name.split('.').pop();
+                                const map = new Map(Object.entries(avatar.gltf.humanoid.humanBones));
+
+                                // Find matching bone
+                                const exists = Array.from(map.keys()).find(obj => customMatch(track.name, obj));
+
+                                if (exists) {
+                                    console.log('Found matching bone:', track.name);
+                                    // Update track name to match VRM bone structure
+                                    if (extension) {
+                                        track.name = `${map.get(exists).node.name}.${extension}`;
+                                    } else {
+                                        track.name = map.get(exists).node.name;
+                                    }
+
+                                    // Process quaternion values if needed
+                                    if (extension === "quaternion") {
+                                        const values = [];
+                                        for (let j = 0; j < track.values.length; j += 4) {
+                                            values.push(
+                                                track.values[j],
+                                                -track.values[j + 1],
+                                                -track.values[j + 2],
+                                                track.values[j + 3]
+                                            );
+                                        }
+                                        track.values = new Float32Array(values);
+                                    }
+                                } else if (track.name.toLowerCase().includes("position")) {
+                                    // Remove position tracks as they're not needed
+                                    animation.tracks.splice(i, 1);
+                                }
+                            }
+
+                            // Create and play the animation
+                            const action = avatar.gltf.mixer.clipAction(animation);
+                            action.reset();
+                            action.play();
+                            console.log("Motion applied successfully:", motionUrl);
+                        } else {
+                            console.error("No animation found in the VRMA file");
+                        }
+                    } else {
+                        console.error("Avatar humanoid not properly initialized");
+                    }
+                },
+                (progress) => {
+                    console.log("Loading motion...", (progress.loaded / progress.total) * 100, "%");
+                },
+                (error) => {
+                    console.error("Error loading motion:", error);
+                }
+            );
+        }
 
         // Initialize scene and load VRM model
         const scene = new BasicScene();
@@ -496,15 +442,14 @@
         const avatar = new Avatar("./miyagi.vrm", scene.scene);
 
         // Button to apply rig face
-        document
-            .getElementById("applyRigFaceButton")
-            .addEventListener("click", () => {
-                avatar.rigFace(rigFaceData);
-            });
+        document.getElementById("applyRigFaceButton").addEventListener("click", () => {
+            avatar.rigFace(rigFaceData);
+        });
 
         document.getElementById("applyMotionButton").addEventListener("click", () => {
+            // const motionUrl = "./motionloop.vrma";
             const motionUrl = "./motion1.vrma";
-            applyMotionToVRM(avatar, motionUrl); // 'avatar' là instance đã được khởi tạo
+            applyMotionToVRM(avatar, motionUrl);
         });
     </script>
 </body>

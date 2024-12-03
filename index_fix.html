@@ -456,7 +456,7 @@
 
                 });
                 loader1.load(bvhFilePath, function (result) {
-                    console.log(result);
+                    console.log('---load motion' + result.animations[0]);
                     // console.log("animation name vrma", result.animations[0]);
                     // result.animations[0].tracks.forEach((track, index) => {
                     //   console.log( track.name);
@@ -471,6 +471,7 @@
                         let map = new Map(Object.entries(currentVrm.humanoid.humanBones));
                         var exists = Array.from(map.keys()).find(obj => {
                             // return track.name.toLowerCase().includes(obj.toLowerCase())
+
                             return customMatch(track.name, obj);
 
                         });

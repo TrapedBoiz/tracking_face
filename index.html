@@ -64,6 +64,7 @@
   <button id="applyMotionButton1">Apply motion1</button>
   <button id="seenVrma">Seen Vrma</button>
   <button id="seenVrm">Seen Vrm bone</button>
+  <button id="applyRigFaceButton">Apply Rig Face</button>
   <script type="module">
     import * as THREE from 'three';
     import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
@@ -174,15 +175,6 @@
     let listMoraTimeOut = [];
     let prev1, prev2;
     function randomMora(volumne) {
-      // let randIndex;
-      // do {
-      //     randIndex = Math.floor(Math.random() * listMora.length);
-      // } while (listMora[randIndex] === prev1 && listMora[randIndex] === prev2);
-      // var timeoutId = setTimeout(() => {
-      //     voice(listMora[randIndex], timeoutId, volumne);
-      //     randomMora();
-      // }, 100);
-      // listMoraTimeOut.push(timeoutId);
       console.log('randomMora', volumne, volumne);
       let randIndex;
       randIndex = Math.floor(Math.random() * listMora.length);
@@ -194,12 +186,6 @@
       prev1 = listMora[randIndex];
       console.log('randomMora to voice', listMora[randIndex], volumne);
       voice(listMora[randIndex], 100, volumne);
-      // voice(listMora[randIndex], timeoutId, volumne);
-      // var timeoutId = setTimeout(() => {
-      //     voice(listMora[randIndex], 100, volumne);
-      //     randomMora();
-      // }, 100);
-      // listMoraTimeOut.push(timeoutId);
     }
 
     var isStartSetVoice = false;
@@ -214,12 +200,7 @@
       console.log('voiceee mora1', mora);
 
       if (currentVrm && currentVrm.expressionManager) {
-        // if(!listMoraTimeOut.includes(timeoutId)){
-        //     return;
-        // }
         resetMouth();
-        // if(isStartSetVoice) return;
-        // isStartSetVoice = true;
         console.log('voiceee mora', mora);
         if (mora == "a") {
 
@@ -277,9 +258,7 @@
     }
 
 
-    // loadVrm(`newidol.vrm`);
     loadVrm(`miyagi_new.vrm`);
-    // loadVrm("https://v-cast.s3.ap-northeast-1.amazonaws.com/admin_4/admin_4_miyagi.vrm");
     function loadVrm(fileName) {
 
       const loader = new GLTFLoader();
@@ -291,9 +270,6 @@
       console.log('load');
       loader.load(
         fileName,
-        // `/models/aichan.vrm`,
-
-        // called when the resource is loaded
         (gltf) => {
           const vrm = gltf.userData.vrm;
           // calling these functions greatly improves the performance
@@ -312,6 +288,7 @@
           loading = false;
           currentAction;
           pendingAnimation = null;
+
           if (currentVrm) {
             scene.remove(currentVrm.scene);
             currentVrm = null;
@@ -324,25 +301,6 @@
           console.log(currentVrm);
 
           var listSkinFaceMesh = [];
-          // if(currentVrm.firstPerson.meshAnnotations && currentVrm.firstPerson.meshAnnotations.length > 0){
-          //     for (const meshAnnotation of currentVrm.firstPerson.meshAnnotations) {
-          //         if(meshAnnotation.meshes && meshAnnotation.meshes[0].name.includes('Face')){
-          //             listSkinFaceMesh.push(...meshAnnotation.meshes);
-
-
-          //         }
-
-          //     }
-          //     var vrmNewExpressionA = new VRMExpression(`test`);
-
-          //     var index = getIndex('Fcl_EX_ase');
-          //     console.log("keyyyy", index);
-          //     vrmNewExpressionA.addBind(new VRMExpressionMorphTargetBind({index : index, primitives: listSkinFaceMesh, weight: 1}));
-          //     currentVrm.expressionManager.registerExpression(vrmNewExpressionA);
-          //     console.log(currentVrm.expressionManager.getExpression(`test`));
-
-
-          // }
 
           if (currentVrm) {
             console.log('success');
@@ -351,24 +309,15 @@
           setTimeout(() => {
             console.log('success');
             randomBlink();
-            // startTalking();
-            // setTimeout(() => {
-            //     endTalking();
-            // }, 5000);
           }, 3000);
         },
-
-        // called while loading is progressing
         (progress) => { },
-
-        // called when loading has errors
         (error) => console.log("huhu", error),
       );
     }
 
     function resetBlink() {
       isBlink = false;
-      // console.log("valueBlink", "resetBlink");
       _listTimeOutBlink.forEach(timeoutId => {
         clearTimeout(timeoutId);
       });
@@ -403,15 +352,11 @@
         var timeOut = setTimeout(() => {
           if (isBlink && currentVrm) {
             var valueBlink = currentVrm.expressionManager.getValue("blink");
-            // console.log('valueBlink3', valueBlink);
             currentVrm.expressionManager.setValue("blink", valueBlink > value ? valueBlink - value : 0);
-            // console.log('valueBlink4', valueBlink);
           }
         }, index * timeTimeout);
         _listTimeOutBlink.push(timeOut);
       }
-      // blink();
-      // currentVrm.expressionManager.setValue("blink", 1);
       setTimeout(() => {
         resetBlink();
       }, timeReset);
@@ -437,8 +382,6 @@
         if (!mixer) {
           mixer = new THREE.AnimationMixer(currentVrm.scene);
         }
-        // const startAction = mapAction.get(currentBvhFilePath)
-        // const endAction = mapAction.get(bvhFilePath);
         if (isFading || loading) {
 
           pendingAnimation = bvhFilePath;
@@ -456,21 +399,22 @@
 
         });
         loader1.load(bvhFilePath, function (result) {
-          console.log(result);
-          // console.log("animation name vrma", result.animations[0]);
-          // result.animations[0].tracks.forEach((track, index) => {
-          //   console.log( track.name);
-          // });
-          // console.log("humanBones:", new Map(Object.entries(currentVrm.humanoid.humanBones)));
+          console.log('---load motion' + result.animations[0]);
+          // Filter out head-related tracks
+          const headRelatedBones = ['head', 'neck', 'leftEye', 'rightEye', 'jaw'];
+          result.animations[0].tracks = result.animations[0].tracks.filter(track => {
+            // Check if the track name contains any head-related bone names
+            return !headRelatedBones.some(boneName =>
+              track.name.toLowerCase().includes(boneName.toLowerCase())
+            );
+          });
+
           for (let i = result.animations[0].tracks.length; i--;) {
             let track = result.animations[0].tracks[i];
             var value = [];
             var extension = track.name.split('.').pop();
-            // console.log(track.name);
-            // console.log(extension);
             let map = new Map(Object.entries(currentVrm.humanoid.humanBones));
             var exists = Array.from(map.keys()).find(obj => {
-              // return track.name.toLowerCase().includes(obj.toLowerCase())
               return customMatch(track.name, obj);
 
             });
@@ -535,6 +479,7 @@
     }
 
     function customMatch(trackName, obj) {
+      // Ánh xạ các tên tắt với tên đầy đủ
       const nameMap = {
         "l_shoulder": "leftShoulder",
         "l_up_arm": "leftUpperArm",
@@ -556,13 +501,22 @@
         "torso_1": "spine",
         "torso_2": "chest",
         "torso_3": "upperChest",
+        // Bạn có thể thêm các ánh xạ khác tại đây
       };
+
+      // Loại bỏ phần ".quaternion" nếu có trong trackName
       const cleanedTrackName = trackName.split(".")[0];
+      // console.log("cleanedTrackName", cleanedTrackName);
 
+      // Lấy giá trị ánh xạ nếu tồn tại
       const mappedName = nameMap[cleanedTrackName];
+      // const mappedName = nameMap[cleanedTrackName];
 
+      // So sánh obj với tên ánh xạ
+      // console.log("customMatch", trackName, "-", obj, mappedName);
       return (
         (mappedName && mappedName.toLowerCase() === obj.toLowerCase()) ||
+        //track.name.toLowerCase().includes(obj.toLowerCase())
         (trackName.toLowerCase().includes(obj.toLowerCase()) || obj.toLowerCase().includes(trackName.toLowerCase()))
       );
     }
@@ -742,6 +696,105 @@
       );
     }
 
+    const rigFaceData = {
+      head: {
+        y: -0.1548,
+        x: -0.1935,
+        z: -0.8555,
+        degrees: { y: -8.87, x: -11.08, z: -49.01 },
+      },
+      eye: { l: 0.2, r: 0.5 },
+      pupil: { x: -1, y: 0 },
+      mouth: { shape: { A: 0, E: 0, I: 0, O: 1, U: 0 } },
+    };
+
+    // Hàm lerp để tạo transition mượt mà
+    function lerp(start, end, t) {
+      return start + (end - start) * t;
+    }
+
+    // Lưu trữ giá trị facial expression trước đó
+    let previousExpressions = {
+      head: { x: 0, y: 0, z: 0 },
+      eye: { l: 0, r: 0 },
+      mouth: { A: 0, E: 0, I: 0, O: 0, U: 0 }
+    };
+
+    function applyFacialExpression(vrm, rigFaceData) {
+      if (!vrm || !vrm.expressionManager) {
+        console.error("VRM or expression manager not initialized");
+        return;
+      }
+
+      const BLEND_WEIGHT = 0.5; // Set constant blend weight
+      const LERP_FACTOR = 0.3; // Điều chỉnh độ mượt của transition (0-1)
+
+      // Apply head rotation with lerp
+      const head = vrm.humanoid.getRawBoneNode('head');
+      if (head) {
+        const targetX = THREE.MathUtils.degToRad(rigFaceData.head.degrees.x * BLEND_WEIGHT);
+        const targetY = THREE.MathUtils.degToRad(rigFaceData.head.degrees.y * BLEND_WEIGHT);
+        const targetZ = THREE.MathUtils.degToRad(rigFaceData.head.degrees.z * BLEND_WEIGHT);
+
+        previousExpressions.head.x = lerp(previousExpressions.head.x, targetX, LERP_FACTOR);
+        previousExpressions.head.y = lerp(previousExpressions.head.y, targetY, LERP_FACTOR);
+        previousExpressions.head.z = lerp(previousExpressions.head.z, targetZ, LERP_FACTOR);
+
+        head.rotation.set(
+          previousExpressions.head.x,
+          previousExpressions.head.y,
+          previousExpressions.head.z
+        );
+      }
+
+      // Apply eye blink with lerp
+      const leftBlink = lerp(previousExpressions.eye.l, rigFaceData.eye.l * BLEND_WEIGHT, LERP_FACTOR);
+      const rightBlink = lerp(previousExpressions.eye.r, rigFaceData.eye.r * BLEND_WEIGHT, LERP_FACTOR);
+      
+      vrm.expressionManager.setValue('blink_l', leftBlink);
+      vrm.expressionManager.setValue('blink_r', rightBlink);
+      
+      previousExpressions.eye.l = leftBlink;
+      previousExpressions.eye.r = rightBlink;
+
+      // Apply mouth shapes with lerp
+      const mouthShapes = ['A', 'E', 'I', 'O', 'U'];
+      const mouthMorphs = ['aa', 'ee', 'ih', 'oh', 'ou'];
+      
+      mouthShapes.forEach((shape, index) => {
+        const currentValue = previousExpressions.mouth[shape];
+        const targetValue = rigFaceData.mouth.shape[shape] * BLEND_WEIGHT;
+        const lerpedValue = lerp(currentValue, targetValue, LERP_FACTOR);
+        
+        vrm.expressionManager.setValue(mouthMorphs[index], lerpedValue);
+        previousExpressions.mouth[shape] = lerpedValue;
+      });
+
+      // Apply look direction with lerp
+      if (vrm.lookAt) {
+        const euler = new THREE.Euler(
+          rigFaceData.pupil.y * BLEND_WEIGHT,
+          rigFaceData.pupil.x * BLEND_WEIGHT,
+          0,
+          'XYZ'
+        );
+        vrm.lookAt.applier.lookAt(euler);
+      }
+
+      // Update expressions
+      vrm.expressionManager.update();
+    }
+
+    // Add button event listener
+    document.getElementById("applyRigFaceButton").addEventListener("click", () => {
+      if (currentVrm) {
+        applyFacialExpression(currentVrm, rigFaceData);
+        console.log("Applied facial expression");
+      } else {
+        console.error("VRM model not loaded");
+      }
+    });
+
     animate();
     function animate() {
 
@@ -778,27 +831,18 @@
 
     document.getElementById("applyMotionButton1").addEventListener("click", () => {
       applyAnimation("https://v-cast.s3.ap-northeast-1.amazonaws.com/talent_2/talent_2_VRMA_0333.vrma", 'waiting');
-      // applyAnimation("./motion2.vrma", 'waiting');
-      // applyAnimation("./motionloop.vrma", 'waiting');
-      // pplyAnimation("https://v-cast.s3.ap-northeast-1.amazonaws.com/admin_4/admin_4_idle_loop.vrma", 'waiting');
     });
 
     document.getElementById("applyMotionButton").addEventListener("click", () => {
-      // applyAnimation("https://v-cast.s3.ap-northeast-1.amazonaws.com/talent_2/talent_2_VRMA_0333.vrma", 'waiting');
-      // applyAnimation("./motion2.vrma", 'waiting');
-      // applyAnimation("./motionloop.vrma", 'waiting');
       applyAnimation("https://v-cast.s3.ap-northeast-1.amazonaws.com/admin_4/admin_4_idle_loop.vrma", 'waiting');
     });
     document.getElementById("seenVrm").addEventListener("click", () => {
-      // loadVRMAndListBones("./miyagi_new.vrm");
-      // saveVRMAsJSON("./miyagi_new.vrm");
 
       const loader = new GLTFLoader();
       loader.load(
         "./miyagi.vrm",
         (gltf) => {
           console.log("VRMA file loaded:", gltf);
-
           // List các bone được sử dụng trong VRMA
           listBonesUsedInVRMA(gltf);
         },
@@ -815,12 +859,9 @@
 
       const loader = new GLTFLoader();
       loader.load(
-        // "./motionloop.vrma", 
-        // "./motion1.vrma", 
         "./motion2.vrma",
         (gltf) => {
           console.log("VRM Model Loaded:", gltf);
-
           // Trích xuất dữ liệu không có vòng lặp
           const jsonData = JSON.stringify(
             {
